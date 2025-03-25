@@ -11,7 +11,7 @@ interface AlbumCardProps{
 const AlbumCard:React.FC<AlbumCardProps> = ({image,name,desc,id}) => {
     const navigate = useNavigate();
   return (
-    <div className="mini-w-[180px] p-2 px-3 rounded cursor-pointer bg-[#ffffff26]"
+    <div className="mini-w-[180px] p-2 px-3 rounded cursor-pointer hover:bg-[#ffffff26]"
     onClick={()=>navigate('/album/'+id)}
     >
         <img src={image} className="rounded w-[160px]"/>
